@@ -15,6 +15,7 @@ sudo mv composer.phar /usr/local/bin/composer
 rm -f composer-setup.php
 
 ## Install Terminus
+sudo apt-get install -y php-xml
 mkdir -p ~/terminus && cd ~/terminus
 curl -L https://github.com/pantheon-systems/terminus/releases/download/3.2.1/terminus.phar --output terminus
 chmod +x terminus
