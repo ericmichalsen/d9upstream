@@ -1,6 +1,32 @@
-image: devwithlando/gitpod:1
+# image: devwithlando/gitpod:1
 
-tasks:
-  - name: Start Drupal
-    command: |
-      lando start
+# tasks:
+#   - name: Start Drupal
+#     command: |
+#       lando start
+
+image:
+  file: .gitpod.Dockerfile
+
+# List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
+# ports:
+#   - port: 8000
+#     onOpen: open-preview
+
+# vscode:
+#   extensions:
+#     - bmewburn.vscode-intelephense-client
+#     - shevaua.phpcs
+#     - neilbrayfield.php-docblocker
+#     - felixfbecker.php-debug
+#     - skippednote.vs-code-drupal
+#     - eamodio.gitlens
+#     - davidanson.vscode-markdownlint
+#     - editorconfig.editorconfig
+#     - redhat.vscode-yaml
+
+# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
+# tasks:
+#   - init: ./setup.sh
+#     command: cd drupal && XDEBUG_MODE=debug vendor/bin/drush rs 0.0.0.0:8000
+
