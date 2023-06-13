@@ -1,3 +1,8 @@
+### Not Required ###
+###
+### I added this to run PHP, Terminus, and Composer outside of Lando.
+### To gain access to these tools, lando ssh to enter into the VM
+
 apt-get -q update 
 sudo apt-get install -y php-dev 
 sudo apt-get purge -y composer 
